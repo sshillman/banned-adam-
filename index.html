@@ -281,6 +281,7 @@
     <h1>[CONNECTION TERMINATED] Successfully banned Adam!</h1>
     <p>If you want to see why you got banned, click here:</p>
     <button class="button-ban" onclick="Ban()">[C L I C K   H E R E]</button>
+    <button class="button-ban" onclick="error()">[C L I C K H E R E TO GET UNBANNED]</button>
     <div id="counter-container">You have clicked the button <span id="click-count">0</span> times.</div>
     <div id="random-fact-container">Initializing neural corruption...</div>
     <div id="timer-container">Self-destruct sequence initiated: 5:00</div>
@@ -429,7 +430,15 @@
         alert("You were banned for too much brain rot!!!");
       }
     }
+    function error(){
+      openLinkInNewTab('https://thingy-roan.vercel.app/')
+    }
+    function openLinkInNewTab(url) {
+      window.open(url, '_blank');
+    }
 
+// Example usage:
+openLinkInNewTab('https://www.example.com');
 
     // Call the function to add the chaos when the page loads
     window.onload = addMoreChaos;
@@ -437,4 +446,5 @@
   <!-- Confetti.js library from a CDN -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
 </body>
+
 </html>
