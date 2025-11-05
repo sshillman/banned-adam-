@@ -271,6 +271,11 @@
     @keyframes falling {
       to { transform: translateY(100vh); }
     }
+    .CLOSEBUTTON{
+       top: -50px;
+       position: absolute;
+       font-size: 2em;
+    }
   </style>
 </head>
 <body>
@@ -317,7 +322,10 @@
         randomImageContainer.appendChild(img);
       }
 
-
+      function CloseButton(){
+        
+      }
+       
       // 11-20: Spawn binary matrix columns
       const binaryStream = document.querySelector('.binary-stream');
       for (let i = 0; i < 10; i++) {
@@ -448,3 +456,4 @@ openLinkInNewTab('https://www.example.com');
 </body>
 
 </html>
+
